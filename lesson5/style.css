@@ -5,6 +5,10 @@
     /* background-color: rgb(218, 218, 218); - из-за этого не работает colgroup */
 }
 
+body{
+    background-color: rgb(218, 218, 218);
+}
+
 .main{
     /* display: none; */
     width: 800px;
