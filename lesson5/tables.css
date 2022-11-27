@@ -1,0 +1,77 @@
+.batman {
+    background-color: #d7d9f2;
+}
+
+.flash {
+    background-color: #ffe8d4;
+}
+
+caption {
+    padding: 8px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .7rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+
+.col-number{
+    padding: 10px 5px;
+    color: navy;
+    background-color: bisque;
+    width: auto;
+}
+
+.col-info{
+    background-color: blueviolet;
+    width: auto;
+}
+
+.col-status{
+    background-color: darkorange;
+    width: auto;
+}
+
+#postsTable{
+    border: 1px solid green;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+#postsTable tr td, 
+#postsTable tr th{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+#postsTable tr:nth-child(even) td{
+    background-color: aqua;
+}
+
+#postsTable tr:nth-child(odd) td{
+    background-color: deeppink;
+}
+
+
+
+#td1{
+    background-color: red;
+    width: 100px;
+    height: 70px;
+}

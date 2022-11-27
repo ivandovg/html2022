@@ -1,0 +1,44 @@
+.loader-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.loader{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 40%;
+    margin: auto;
+    animation: loader 1s ease infinite;
+}
+
+@keyframes loader {
+    0%, 100%{
+        box-shadow: 
+            -30px 45px 0 #ffffff,
+            30px 45px 0 rgba(255, 255, 255, 0.2),
+            30px 105px 0 rgba(255, 255, 255, 0.2),
+            -30px 105px 0 rgba(255, 255, 255, 0.2);
+    }
+    25%{
+        box-shadow: 
+            -30px 45px 0 rgba(255, 255, 255, 0.2),
+            30px 45px 0 #ffffff,
+            30px 105px 0 rgba(255, 255, 255, 0.2),
+            -30px 105px 0 rgba(255, 255, 255, 0.2);
+    }
+    50%{
+        box-shadow: 
+            -30px 45px 0 rgba(255, 255, 255, 0.2),
+            30px 45px 0 rgba(255, 255, 255, 0.2),
+            30px 105px 0 #ffffff,
+            -30px 105px 0 rgba(255, 255, 255, 0.2);
+    }
+    75%{
+        box-shadow: 
+            -30px 45px 0 rgba(255, 255, 255, 0.2),
+            30px 45px 0 rgba(255, 255, 255, 0.2),
+            30px 105px 0 rgba(255, 255, 255, 0.2),
+            -30px 105px 0 #ffffff;
+    }
+}
