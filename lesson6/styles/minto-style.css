@@ -1,0 +1,77 @@
+.wraper{
+    border-top: 7px solid #82699d;
+    border-bottom: 7px solid #82699d;
+    width: 100%;
+    min-height: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-content{
+    width: 1010px;
+    margin: 0 auto;
+}
+
+.page-header{
+    height: 126px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.page-logo, .page-menu, .page-menu > ul > li{
+    display: inline-block;
+    color: #454242;
+}
+
+.page-logo > span{
+    display: inline-block;
+}
+
+.page-logo > span:first-child{
+    background-image: url(../images/flower.png);
+    width: 71px;
+    height: 70px;
+    text-align: center;
+    font-size: 30pt;
+    box-sizing: border-box;
+    padding-top: 10px;
+    color: white;
+}
+
+.page-logo > span:last-child{
+    text-transform: uppercase;
+    color: #a292b3;
+    font-size: 29pt;
+    padding-top: 10px;
+}
+
+.page-menu{
+    margin-top: 20px;
+    position: absolute;
+    right: 0px;
+}
+
+.page-menu > ul > li{
+    padding-left: 25px;
+}
+
+.page-menu > ul > li > a, .page-menu > ul > li > a:visited{
+    text-decoration: none;
+    color: #454242;
+    position: relative;
+}
+
+
+.page-menu > ul > li > a > img{
+    padding-right: 7px;
+    position: relative;
+    top: 3px;
+}
+
+.page-footer{
+    padding-top: 8px;
+    color: #454242;
+    height: 67px;
+    background-image: url(../images/footer-image.png);
+    background-repeat: repeat-x;
+    font-size: 15pt;
+}
