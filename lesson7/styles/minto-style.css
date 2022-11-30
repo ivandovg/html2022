@@ -1,0 +1,236 @@
+.wraper{
+    border-top: 7px solid #82699d;
+    border-bottom: 7px solid #82699d;
+    width: 100%;
+    min-height: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.page-content{
+    width: 1010px;
+    margin: 0 auto;
+}
+
+.page-header{
+    height: 80px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.page-logo, .page-menu, .page-menu > ul > li{
+    display: inline-block;
+    color: #454242;
+}
+
+.page-logo > span{
+    display: inline-block;
+}
+
+.page-logo > span:first-child{
+    background-image: url(../images/flower.png);
+    width: 71px;
+    height: 70px;
+    text-align: center;
+    font-size: 30pt;
+    box-sizing: border-box;
+    padding-top: 10px;
+    color: white;
+}
+
+.page-logo > span:last-child{
+    text-transform: uppercase;
+    color: #a292b3;
+    font-size: 29pt;
+    padding-top: 10px;
+}
+
+.page-menu{
+    margin-top: 20px;
+    position: absolute;
+    right: 0px;
+}
+
+.page-menu > ul > li{
+    padding-left: 25px;
+}
+
+.page-menu > ul > li > a, .page-menu > ul > li > a:visited{
+    text-decoration: none;
+    color: #454242;
+    position: relative;
+}
+
+.page-menu > ul > li > a > img{
+    padding-right: 7px;
+    position: relative;
+    top: 3px;
+}
+
+.page-slides{
+    width: 100%;
+    height: 480px;
+    background-image: url(../images/img_main.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-slides > div{
+    text-align: center;
+    color: white;
+}
+
+.page-slides > div > header{
+    font-size: 56pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: -3px 5px 2px rgba(0,0,0,0.7);
+}
+
+.page-slides > div > p{
+    font-size: 24pt;
+}
+
+.page-slides > button {
+    width: 30px;
+    height: 50px;
+    background-color: #a292b3;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24pt;
+    text-align: center;
+}
+
+.page-cite{
+    margin: 30px 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    padding: 40px;
+    font-style: italic;
+    font-size: 18pt;
+    color: gray;
+    line-height: 1.5;
+}
+
+.page-cite > strong{
+    color: #82699d;
+    font-weight: bold;
+}
+
+.page-image-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-image-info > img{
+    box-sizing: border-box;
+    width: 271px;
+    height: 271px;
+    margin: 40px;
+    margin-top: 0;
+    border-radius: 50%;
+    border: 5px solid lightsteelblue;
+}
+
+.page-image-info > div > header{
+    font-weight: bold;
+    font-size: 31pt;
+    line-height: 2;
+    width: 100%;
+}
+
+.page-image-text{
+    line-height: 1.5;
+    font-size: 15pt;
+}
+
+.readmore{
+    display: block;
+    font-size: 13pt;
+    font-style: italic;
+    text-align: right;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #454242;
+}
+
+.readmore:visited{
+    color: #454242;
+}
+
+.readmore::after{
+    content: "\21E8";
+}
+
+.page-text-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 50px 10px;
+}
+
+.page-text-line > div > strong{
+    font-weight: bold;
+}
+
+.page-text-line > div:last-child{
+    background-image: url(../images/line-image.png);
+    background-repeat: repeat-x;
+    background-position-y: center;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.page-sponsored {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.page-sponsored > a{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    border: 2px solid #e4e4e4;
+    background-color: #f5f5f5;
+    padding: 5px;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+.page-footer{
+    color: #454242;
+    height: 67px;
+    background-image: url(../images/footer-image.png);
+    background-repeat: repeat-x;
+    font-size: 15pt;
+    /* position: absolute;
+    bottom: 0px; */
+    width: 100%;
+    margin-top: 50px;
+}
+
+.page-footer > div{
+    width: 1010px;
+    height: 100%;;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-footer > div > div > img:first-child{
+    margin-right: 20px;
+}
