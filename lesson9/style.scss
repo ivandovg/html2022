@@ -1,0 +1,116 @@
+$pageTextSize: 1.2rem;
+$pageTitleSize: 2rem;
+$pageTextFooter: 0.7rem;
+$colorTitleText: rgb(31, 6, 122);
+$colorMainText: rgb(16, 19, 43);
+$colorTitleBack: rgb(218, 218, 218);
+$textValue: "test text " + "additional" + " text";
+$font: 5px Ser + "if"; 
+$testContent: "This content " + 2022 + " year";
+$fontFace: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+@import "_mixins";
+
+@mixin titleFormat() {
+	font-weight: bold;
+	color: $colorTitleText;
+	background-color: $colorTitleBack;
+	font-size: $pageTitleSize;
+	font-family: $fontFace;
+}
+
+@function pi(){ @return 3.1415;}
+
+@function rad ($angle) {
+    $unit: unit ($angle);
+    $unitless: $angle / ($angle *0 + 1);
+    //Если значение angle (угла) указано в градусах ('deg'), нужно конвертировать его в радианы.
+    @if $unit == deg {
+        $unitless: $unitless / 180 * PI();
+    }
+    @return $unitless;
+}
+
+@mixin zebra() {
+    @for $i from 1 through 7 {
+        @if ($i % 2 == 1) {
+            .stripe-#{$i} {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 800px;
+	background-color: bisque;
+	padding: 10px;
+	margin: 0 auto;
+
+	header{
+		height: 50px;
+		text-align: center;
+
+		h1{
+			@include titleFormat();
+
+			&::after{
+				content: $textValue;
+				font-style: italic;
+				text-align: center;
+				color: $colorMainText;
+			}
+		}
+	}
+
+	main{
+		text-align: justify;
+		text-indent: 2rem;
+		font-size: $pageTextSize;
+		color: $colorMainText;
+		font-family: $fontFace;
+
+
+		.shadow{
+			@include vendor(box-shadow, 10px 10px 5px 0px rgba(0,0,0,0.75));
+			width: 400px;
+			margin: 10px;
+			padding: 15px;
+			@include border-radius(0px 0px 20px 0px);
+
+			header{
+				@include titleFormat();
+			}
+		}
+
+		@include zebra();
+	}
+
+	$var1: 10px;
+	$var2: 15px;
+
+	footer{
+		margin-top: 15px;
+		border-top: 2px solid gray;
+		font-family: $fontFace;
+		color: $colorMainText;
+
+		// width: 15px * 4px; - ERROR
+		// width: 10px * 10;
+		// width: 10px + 10;
+		// width: 10px + 10px;
+		// width: 5 * (2px + 3px);
+		// width: (15px / 3);
+		// top: #{$var1} / #{$var2};  // Выводится как обычный CSS-код, деление не выполняется
+	}
+
+	@for $i from 1 through 7{
+		.slide-#{$i}{ height: 10px * $i;}
+	}
+}

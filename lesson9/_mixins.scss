@@ -1,0 +1,15 @@
+@mixin vendor($property, $value){
+	-webkit-#{$property}:$value;
+    -moz-#{$property}:$value;
+    -ms-#{$property}:$value;
+    -o-#{$property}:$value;
+    #{$property}:$value;
+}
+
+@mixin border-radius($radius) {        // Префиксы для:
+    -webkit-border-radius: $radius;    // Chrome и Safari
+       -moz-border-radius: $radius;    // Firefox
+        -ms-border-radius: $radius;    // Internet Explorer
+         -o-border-radius: $radius;    // Opera
+            border-radius: $radius;    // Стандартный CSS
+}
